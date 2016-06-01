@@ -1,22 +1,51 @@
+h2, h3, p {
+  font-family: 'Open Sans', sans-serif;
+}
+
 .header img {
-  max-width: 90px;
+  max-width: 84px;
+  margin-top: 10px;
 }
 .header h1 {
   font-family: 'Satisfy', cursive;
-  color: #F48059;
+  color: #F37975;
+  max-width: 400px;
+  margin-top:30px;
+  display: inline-block;
+  position: absolute;
+}
+.header ul {
+  margin-right: 35px;
+  margin-top: 30px;
+  display: inline-block;
+  position: relative;
+}
+.navlinks a{
+  color: #62AEE6;
+  font-size: 19px;
+  font-weight: 400;
+}
+.navbar-brand {
+  padding: 0px;
+  margin-left: 35px;
 }
 .jumbotron{
   background-image: url('../img/hero.jpg');
-  min-height: 500px;
+  min-height: 450px;
   background-size: cover;
   background-position: center;
 }
 .jumbotron h1 {
   font-family: 'Open Sans', sans-serif;
   color: #fff;
-  font-weight: 300;
+  font-weight: 400;
   text-transform: uppercase;
-  font-size: 48px;
+  font-size: 28px;
+}
+.featuredservices {
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-bottom: 20px;
 }
 .featured h2 {
   text-transform: uppercase;
@@ -27,6 +56,31 @@
 .featured .thumbnail {
   background-color: #edf1f4;
   padding: 10px;
+}
+.btn {
+  background-color: #5BC0DE;
+  font-size: 10px;
+  font-size: 10px;
+  font-weight: 700;
+  line-height: 18px;
+  border: none;
+  width: 84px;
+}
+.thumbnail .caption {
+  padding: 0;
+}
+.caption h3 {
+  font-size: 16px;
+  font-weight: 700;
+}
+.caption p {
+  font-size: 13px;
+  font-weight: 400;
+  margin-top: 10px;
+  margin-bottom: 0;
+}
+.services {
+  padding: 0;
 }
 .services h2 {
   text-transform: uppercase;
@@ -43,15 +97,39 @@ footer .row {
   margin: 0;
 }
 footer img {
-  max-width: 125px;
+  max-width: 110px;
 }
 footer a {
   color: #BFC0C1;
+  font-family: 'Open Sans', sans-serif;
   text-decoration: none;
+}
+footer a:hover {
+  color: #F37975;
+  text-decoration: none;
+}
+footer p {
+  margin-bottom: 0;
+}
+footer .logoholder {
+  padding-left: 0;
+  margin-top: -15px;
 }
 footer .border {
   border-left: 1px solid #333;
+  border-right: 1px solid #333;
+  padding-left: 30px;
 }
 footer .copyright {
+  margin-top: 10px;
   color: #444;
+}
+@media screen and (max-width : 770px){
+  .header h1, ul {
+    display: block;
+    position: relative;
+  }
+  .header ul {
+    margin-top: 0px;
+  }
 }
