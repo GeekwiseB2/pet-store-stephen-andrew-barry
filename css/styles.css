@@ -1,0 +1,20 @@
+.header img {
+  max-width: 90px;
+}
+.header h1 {
+  font-family: 'Satisfy', cursive;
+  color: #F48059;
+}
+.jumbotron{
+  background-image: url('../img/hero.jpg');
+  min-height: 500px;
+  background-size: cover;
+  background-position: center;
+}
+.jumbotron h1 {
+  font-family: 'Open Sans', sans-serif;
+  color: #fff;
+  font-weight: 300;
+  text-transform: uppercase;
+  font-size: 48px;
+}
