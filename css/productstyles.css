@@ -3,9 +3,7 @@
   margin-bottom: 100px;
 }
 .productcategories img {
-  height: 225px;
-  width: 300px;
-  padding-top: 20px;
+  padding: 20px;
 }
 .productcategories .thumbnail {
   background-color: white;
@@ -41,7 +39,7 @@
 }
 .products a {
   text-decoration: none;
-  color: black;
+  color: white;
 }
 .products h2 {
   text-transform: uppercase;
@@ -54,14 +52,4 @@
   background-color: #edf1f4;
   padding: 15px;
   border: 0;
-}
-.products img {
-    height: 240px;
-    width: 240px;
-  }
-@media screen and (max-width : 1200){
-  .productcategories img {
-    height: 150px;
-    width: 200;
-  }
 }
