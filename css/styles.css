@@ -25,7 +25,10 @@
   padding: 0px;
   margin-left: 35px;
 }
-.jumbotron{
+.nav-pills>li.active>a, .nav-pills>li.active>a:focus, .nav-pills>li.active>a:hover {
+  background-color: #F37975;
+}
+.jumbotron {
   background-image: url('../img/hero.jpg');
   min-height: 450px;
   background-size: cover;
