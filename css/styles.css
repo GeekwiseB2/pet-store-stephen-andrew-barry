@@ -126,6 +126,20 @@ footer .copyright {
   margin-top: 10px;
   color: #444;
 }
+.map {
+  position: relative;
+  padding-bottom: 75%; // This is the aspect ratio
+  height: 0;
+  overflow: hidden;
+}
+.map iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100% !important;
+  height: 100% !important;
+  pointer-events: none;
+}
 @media screen and (max-width : 768px){
   .header h1, ul {
     display: block;
