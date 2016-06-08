@@ -23,6 +23,10 @@
   text-decoration: none;
   color: black;
 }
+.products {
+  margin-left: 0;
+  margin-right: 15px;
+}
 .productsrow {
   margin-bottom: 60px;
 }
