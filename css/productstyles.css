@@ -25,6 +25,8 @@
 }
 .productsrow {
   margin-bottom: 60px;
+  margin-right: 5px;
+  margin-left: 5px;
 }
 .break {
   margin-top: 0;
@@ -37,6 +39,7 @@
   height: 2px;
   margin-bottom: 40px;
 }
+
 .products a {
   text-decoration: none;
   color: white;
@@ -46,10 +49,28 @@
   font-weight: 400;
 }
 .products .item {
-  padding: 0 5px;
+  padding: 5px 5px;
 }
 .products .thumbnail {
   background-color: #edf1f4;
   padding: 15px;
   border: 0;
+}
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width : 769px){
+  .products h2 {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width : 437px){
+  .productsrow {
+    margin-right: 0px;
+    margin-left: 5px;
+  }
+  .products h2 {
+    text-align: center;
+  }
 }

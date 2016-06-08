@@ -144,6 +144,8 @@ footer .copyright {
   pointer-events: none;
 }
 
+/* MEDIA QUERIES */
+
 @media screen and (min-width : 1500px) {
   .jumbotron {
     min-height: 575px;
@@ -168,11 +170,11 @@ footer .copyright {
     margin-left: -25px;
     margin-right: -5px;
   }
-  footer .logoholder {
-    margin-right: 200px;
-  }
   .header ul {
     margin-left: 40px;
+  }
+  footer .logoholder {
+    margin-right: 200px;
   }
 }
 
@@ -183,6 +185,7 @@ footer .copyright {
   }
   .header ul {
     margin-right: 0;
+    margin-left: 0;
   }
   footer .logoholder {
     margin-right: 150px;
