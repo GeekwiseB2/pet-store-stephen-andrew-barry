@@ -119,19 +119,84 @@ footer .logoholder {
 }
 footer .border {
   border-left: 1px solid #333;
-  border-right: 1px solid #333;
+  padding-left: 30px;
+}
+footer .social {
+  border-left: 1px solid #333;
   padding-left: 30px;
 }
 footer .copyright {
   margin-top: 10px;
   color: #444;
 }
-@media screen and (max-width : 768px){
+.map {
+  position: relative;
+  padding-bottom: 75%; // This is the aspect ratio
+  height: 0;
+  overflow: hidden;
+}
+.map iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100% !important;
+  height: 100% !important;
+  pointer-events: none;
+}
+
+@media screen and (min-width : 1500px) {
+  .jumbotron {
+    min-height: 575px;
+  }
+  .jumbotron h1 {
+    font-size: 36px;
+  }
+}
+
+@media screen and (max-width : 768px) {
   .header h1, ul {
     display: block;
     position: relative;
   }
   .header ul {
     margin-top: 0px;
+  }
+}
+
+@media screen and (max-width : 436px) {
+  .header {
+    margin-left: -25px;
+    margin-right: -5px;
+  }
+  footer .logoholder {
+    margin-right: 200px;
+  }
+  .header ul {
+    margin-left: 40px;
+  }
+}
+
+@media screen and (max-width : 380px) {
+  .header {
+    margin-left: -20px;
+    margin-right: -10px;
+  }
+  .header ul {
+    margin-right: 0;
+  }
+  footer .logoholder {
+    margin-right: 150px;
+    margin-left: 0;
+  }
+}
+
+@media screen and (max-width : 345px) {
+  .header {
+    margin-left: -15px;
+    margin-right: -15px;
+  }
+  .header ul {
+    margin-right: 0;
+    margin-left: 0;
   }
 }
