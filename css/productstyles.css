@@ -24,7 +24,7 @@
   color: black;
 }
 .products {
-  margin-left: 0;
+  margin-left: 15px;
   margin-right: 15px;
 }
 .productsrow {
@@ -64,5 +64,11 @@
 @media screen and (max-width : 769px){
   .products h2 {
     text-align: center;
+  }
+}
+
+@media screen and (max-width : 340px){
+  .productcategories h2 {
+    font-size: 22px;
   }
 }

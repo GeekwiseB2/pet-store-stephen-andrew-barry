@@ -35,7 +35,7 @@
       </div>
       <div class="row"><!-- START ROW -->
         <div class="col-md-4 center-block"><!-- START PRODUCTCATEGORY -->
-          <a href="#dogproducts">
+          <a class="smooth-scroll" href="#dogproducts">
             <div class="thumbnail"><!-- START PRODUCT THUMBNAIL -->
               <img src="img/dog.jpg" alt="Dog Picture">
               <h3>Dog Products</h3>
@@ -43,7 +43,7 @@
           </a>
         </div><!-- END PRODUCTCATEGORY -->
         <div class="col-md-4 center-block"><!-- START PRODUCTCATEGORY -->
-          <a href="#catproducts">
+          <a class="smooth-scroll" href="#catproducts">
             <div class="thumbnail"><!-- START PRODUCT THUMBNAIL -->
               <img src="img/cat.jpg" alt="Cat Picture">
               <h3>Cat Products</h3>
@@ -51,7 +51,7 @@
           </a>
         </div><!-- END PRODUCTCATEGORY -->
         <div class="col-md-4 center-block"><!-- START PRODUCTCATEGORY -->
-          <a href="#exoticproducts">
+          <a class="smooth-scroll" href="#exoticproducts">
             <div class="thumbnail"><!-- START PRODUCT THUMBNAIL -->
               <img src="img/exotic.jpg" alt="Bird Picture">
               <h3>Exotic Products</h3>
@@ -64,7 +64,7 @@
     <hr class="grad">
 
     <div class="container-fluid products"><!-- START CONTAINER -->
-      <a name="dogproducts">
+      <a id="dogproducts">
       <div class="row"><!-- START ROW -->
       </a>
           <h2>Dog Products</h2>
@@ -94,7 +94,7 @@
             <img src="img/dogproduct1.jpg" alt="Dog Collar">
             <div class="caption">
               <h3 class="text-center">Dog Collar</h3>
-              <p class="text-center">A fancy dog collar for your dog to wear.</p>
+              <p class="text-center">A fancy dog collar for your dog to fancy.</p>
               <p><a href="#" class="btn btn-primary btn-xs center-block" role="button">Purchase Now</a></p>
             </div><!-- END PRODUCTCAPTION -->
           </div><!-- END THUMBNAIL -->
@@ -114,7 +114,7 @@
 
       <hr class="break">
 
-      <a name="catproducts">
+      <a id="catproducts">
       <div class="row"><!-- START ROW -->
       </a>
         <h2>Cat Products</h2>
@@ -154,7 +154,7 @@
             <img src="img/catproduct3.jpg" alt="Cat Litter Scoop">
             <div class="caption">
               <h3 class="text-center">Cat Litter Scoop</h3>
-              <p class="text-center">We hope you are not collecting turds.</p>
+              <p class="text-center">Not for collecting turds.</p>
               <p><a href="#" class="btn btn-primary btn-xs center-block" role="button">Purchase Now</a></p>
             </div><!-- END PRODUCTCAPTION -->
           </div><!-- END THUMBNAIL -->
@@ -164,7 +164,7 @@
 
       <hr class="break">
 
-      <a name="exoticproducts">
+      <a id="exoticproducts">
       <div class="row"><!-- START ROW -->
       </a>
         <h2>Exotic Products</h2>
@@ -252,5 +252,23 @@
     <!-- scripts -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
   	<script src="js/bootstrap.min.js"></script>
+    <script>
+    $(function() {
+        $('a[href*=#]:not([href=#])').click(function() {
+          if( $(this).attr("class")=="smooth-scroll") {
+            if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+                    var target = $(this.hash);
+                    target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+                    if (target.length) {
+                            $('html,body').animate({
+                                    scrollTop: target.offset().top
+                            }, 1000);
+                            return false;
+                    }
+                }
+            }
+        });
+    });
+  </script>
   </body>
 </html>
