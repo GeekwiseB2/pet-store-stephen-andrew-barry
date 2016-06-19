@@ -71,8 +71,13 @@
   border: none;
   width: 84px;
 }
-.thumbnail .caption {
-  padding: 0;
+.btn-primary.active,
+.btn-primary.focus,
+.btn-primary:active,
+.btn-primary:focus,
+.btn-primary:hover,
+.open > .dropdown-toggle.btn-primary .thumbnail .caption {
+  background-color: #5bc0de;
 }
 .caption h3 {
   font-size: 16px;
@@ -84,6 +89,10 @@
   margin-top: 10px;
   margin-bottom: 0;
 }
+.caption a:hover {
+  background-color: #aadeee  !important;
+  color: #114555 !important;
+}
 .services {
   padding: 0;
 }
@@ -94,6 +103,9 @@
 .services ul li a {
   text-transform: uppercase;
   color: #95C9ED
+}
+.adoptnow, .linkbuttons {
+  cursor: pointer;
 }
 footer {
   background-color: #231F20;
