@@ -68,7 +68,7 @@
   font-size: 10px;
   font-weight: 700;
   line-height: 18px;
-  border: none;
+  border: 1px solid #5BC0DE;
   width: 84px;
 }
 .btn-primary.active,
@@ -90,8 +90,9 @@
   margin-bottom: 0;
 }
 .caption a:hover {
-  background-color: #aadeee  !important;
-  color: #114555 !important;
+  background-color: #EEEEEE  !important;
+  color: #5bc0de !important;
+  border: 1px solid #5bc0de !important;
 }
 .services {
   padding: 0;
